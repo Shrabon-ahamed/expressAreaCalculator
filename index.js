@@ -24,7 +24,7 @@ app.get("/triangle_area", (req, res)=>{
 
 app.post("/circle_area", (req, res)=>{
     const radius = parseInt(req.body.value);
-    const result = radius * radius;
+    const result = Math.PI * radius * radius;
     res.send(`<h1>This is result of Circle Area</h1> The area of this circle is: ${result}`)
     console.log(result)
 })
